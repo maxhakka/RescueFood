@@ -1,17 +1,77 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-buttons start item-left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Food Rescue</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-item-group>
+      <ion-card>
+          <img src="assets/imgs/map.png"/>
+        </ion-card>
+    <ion-list-header>
+      Restaurants
+    </ion-list-header> 
+    <ion-item>
+      <button ion-button large clear color="dark" (click)="nextPage();">
+        <ion-avatar item-start><img src="assets/imgs/nymble.png"></ion-avatar>
+        <h2>Nymble</h2>
+      </button>
+      <ion-buttons item-right>
+        <button ion-button icon-only clear (click)="toggle(1)">
+        <ion-icon 
+            [name]="visible ? 'heart' :'heart-outline'" color="danger">
+        </ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button large clear color="dark" (click)="nextPage();">
+          <ion-avatar item-start><img src="assets/imgs/ths_cafe.png"></ion-avatar>
+          <h2> THS Café</h2>
+      </button>
+      <ion-buttons item-right >
+        <button ion-button icon-only clear (click)="toggle(2)">
+          <ion-icon 
+              [name]="visible2 ? 'heart' :'heart-outline'" color="danger">
+          </ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+        <button ion-button large clear color="dark" (click)="nextPage();">
+            <ion-avatar item-start><img src="assets/imgs/KTH_logo.png"></ion-avatar>
+            <h2>KTH Entré</h2>
+        </button>
+      <ion-buttons item-right >
+        <button ion-button icon-only clear (click)="toggle(3)">
+          <ion-icon 
+              [name]="visible3 ? 'heart' :'heart-outline'" color="danger">
+          </ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button large clear color="dark" (click)="nextPage();">
+          <ion-avatar item-start><img src="assets/imgs/openlab.png"></ion-avatar>
+          <h2> Open Café</h2>
+      </button>
+      <ion-buttons item-right >
+        <button ion-button icon-only clear (click)="toggle(4)">
+          <ion-icon 
+              [name]="visible4 ? 'heart' :'heart-outline'" color="danger">
+          </ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-item>
+
+  </ion-item-group>
 </ion-content>

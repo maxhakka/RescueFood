@@ -1,1 +1,31 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mycontent">
+    <ion-content>
+        <div padding>
+        <ion-title><h2>Profile</h2></ion-title>
+        <ion-list>
+            <ion-item>
+                <ion-avatar item-start><img src="assets/imgs/profile.jpg"></ion-avatar>
+                <strong>Max Häkkä</strong>
+                <p>hakka@kth.se</p>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="help-circle" item-start></ion-icon>
+                Help
+            </ion-item>
+            <ion-item>
+                <ion-icon name="information-circle" item-start></ion-icon>
+                About Us
+            </ion-item>
+            <ion-item>
+                <ion-icon name="person" item-start></ion-icon>
+                Change User
+            </ion-item>
+            <ion-item>
+                <ion-icon name="log-out" item-start></ion-icon>
+                Log Out
+            </ion-item>
+        </ion-list>
+        </div>
+    </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage" ></ion-nav>

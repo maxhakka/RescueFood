@@ -1,17 +1,73 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
+    <ion-buttons start item-left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>
-      Contact
+      Statistics
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list>
+        <ion-list-header>Summary</ion-list-header>
+    </ion-list>
+    
+    <ion-list no-lines>
+    
+    <ion-card>
+        <ion-item>
+          <ion-icon name="cafe" item-start></ion-icon>
+          Number of portions saved <strong item-right>13</strong>
+        </ion-item>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-item>
+          <ion-icon name="card" item-start></ion-icon>
+          Amount of money saved (SEK)<strong item-right>534</strong>
+        </ion-item>
+      <ion-card-content>
+        <canvas #moneyCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-item>
+          <ion-icon name="sunny" item-start></ion-icon>
+          Amount of CO2 reduced (kg)<strong item-right>34</strong>
+        </ion-item>
+      <ion-card-content>
+        <canvas #carbonCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+   
+<ion-list>
+    <ion-list-header>History</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+        <ion-avatar item-start><img src="assets/imgs/kyckling.jpg"></ion-avatar>
+        <strong>Chicken Sandwich</strong>
+        <p>2018-05-02</p>
+        <p item-right>15:03</p>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-start><img src="assets/imgs/kanelbullar.jpg"></ion-avatar>
+        <strong>Cinnamon Buns</strong>
+        <p>2018-04-16</p>
+        <p item-right>10:24</p>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-start><img src="assets/imgs/tomatsoppa.jpg"></ion-avatar>
+        <strong>Tomato Soup</strong>
+        <p>2018-04-13</p>
+        <p item-right>17:43</p>
     </ion-item>
   </ion-list>
 </ion-content>

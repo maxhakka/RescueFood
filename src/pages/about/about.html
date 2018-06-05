@@ -1,11 +1,183 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
+      <ion-buttons start item-left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
     <ion-title>
-      About
+      Share
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <ion-fab top right>
+      <button ion-fab mini color="secondary"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+    <ion-item-group>
+      <ion-list-header>
+        Shared food
+      </ion-list-header> 
+     
+        <ion-card>
+            <img src="assets/imgs/tomatsoppa.jpg">
+          
+            <ion-item>
+              <h2>Tomato Soup</h2> 
+              <ion-card-content text-wrap>
+                  <p>Home made tomato soup left over from today!</p>
+              </ion-card-content>
+              <button ion-button icon-left clear color="grey">
+                  <ion-icon name="leaf"></ion-icon>
+                  vegan
+              </button>
+              <button ion-button icon-left clear color="grey">
+                  <ion-icon name="ribbon"></ion-icon>
+                  gluten-free
+              </button>
+              <button ion-button icon-left clear color="grey">
+                  <ion-icon name="ice-cream"></ion-icon>
+                  lactose-free
+              </button>
+            </ion-item>
+          
+            <ion-item>
+              <button ion-button round outline color="secondary">REQUEST</button>
+              <button ion-button icon-left clear item-end>
+                <ion-icon name="clock"></ion-icon>
+                15:00
+              </button>
+            </ion-item>
+          
+          </ion-card>
+          <ion-card>
+            <img src="assets/imgs/kyckling.jpg">
+          
+            <ion-item>
+              <h2>Chicken Sandwich</h2>
+              <ion-card-content text-wrap>
+                  <p>My sandwich that I didn't eat. Made this morning by me!</p>
+              </ion-card-content>
+              <button ion-button icon-left clear color="grey">
+                  <ion-icon name="ice-cream"></ion-icon>
+                  lactose-free
+              </button>
+            </ion-item>
+          
+            <ion-item>
+              <button ion-button round outline color="secondary">REQUEST</button>
+              <button ion-button icon-left clear item-end>
+                <ion-icon name="clock"></ion-icon>
+                17:00
+              </button>
+            </ion-item>
+          
+          </ion-card>
 
+          <ion-card>
+              <img src="assets/imgs/kanelbullar.jpg">
+            
+              <ion-item>
+                <h2>Cinnamon Buns</h2>
+                <ion-card-content text-wrap>
+                    <p>5 cinnamon buns made this morning.</p>
+                </ion-card-content>
+                <button ion-button icon-left clear color="grey">
+                    <ion-icon name="nutrition"></ion-icon>
+                    vegetarian
+                </button>
+              </ion-item>
+            
+              <ion-item>
+                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button icon-left clear item-end>
+                  <ion-icon name="clock"></ion-icon>
+                15:00
+                </button>
+              </ion-item>
+            
+            </ion-card>
+
+            <ion-card>
+              <img src="assets/imgs/missing.png">
+            
+              <ion-item>
+                <h2>Ketchup</h2>
+                <ion-card-content text-wrap>
+                    <p>An unopened bottle of Heinz ketchup.</p>
+                </ion-card-content>
+                <button ion-button icon-left clear color="grey">
+                    <ion-icon name="nutrition"></ion-icon>
+                    vegetarian
+                </button>
+                <button ion-button icon-left clear color="grey">
+                    <ion-icon name="ribbon"></ion-icon>
+                    gluten-free
+                </button>
+              </ion-item>
+            
+              <ion-item>
+                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button icon-left clear item-end>
+                  <ion-icon name="clock"></ion-icon>
+                17:00
+                </button>
+              </ion-item>
+            
+            </ion-card>
+
+            <ion-card>
+              <img src="assets/imgs/sallad.jpg">
+            
+              <ion-item>
+                <h2>Caesar Salad</h2>
+                <ion-card-content text-wrap>
+                    <p>Caesar salad left over from lunch.</p>
+                </ion-card-content>
+                <button ion-button icon-left clear color="grey">
+                    <ion-icon name="ribbon"></ion-icon>
+                    gluten-free
+                </button>
+              </ion-item>
+            
+              <ion-item>
+                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button icon-left clear item-end>
+                  <ion-icon name="clock"></ion-icon>
+                18:00
+                </button>
+              </ion-item>
+            
+            </ion-card>
+
+            <ion-card>
+              <img src="assets/imgs/missing.png">
+            
+              <ion-item>
+                <h2>Spaghetti</h2>
+                <ion-card-content text-wrap>
+                    <p>A bag of spaghetti.</p>
+                </ion-card-content>
+                <button ion-button icon-left clear color="grey">
+                    <ion-icon name="leaf"></ion-icon>
+                    vegan
+                </button>
+                <button ion-button icon-left clear color="grey">
+                    <ion-icon name="ice-cream"></ion-icon>
+                    lactose-free
+                </button>
+              </ion-item>
+            
+              <ion-item>
+                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button icon-left clear item-end>
+                  <ion-icon name="clock"></ion-icon>
+                18:00
+                </button>
+              </ion-item>
+            
+            </ion-card>
+
+      </ion-item-group>
 </ion-content>
