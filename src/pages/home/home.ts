@@ -19,8 +19,8 @@ export class HomePage {
     this.visible4 = false;
   }
 
-  nextPage(){
-    this.navCtrl.push(RestaurantPage);
+  nextPage(data){
+    this.navCtrl.push(RestaurantPage, data);
   }
 
   toggle(restaurang: number) {

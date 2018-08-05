@@ -17,7 +17,7 @@
     </ion-fab>
     <ion-item-group>
       <ion-list-header>
-        Shared food
+        <h2>Shared food</h2>
       </ion-list-header> 
      
         <ion-card>
@@ -43,7 +43,7 @@
             </ion-item>
           
             <ion-item>
-              <button ion-button round outline color="secondary">REQUEST</button>
+              <button ion-button round color="danger" (click)="requestItem('Tomato Soup');">REQUEST</button>
               <button ion-button icon-left clear item-end>
                 <ion-icon name="clock"></ion-icon>
                 15:00
@@ -66,7 +66,7 @@
             </ion-item>
           
             <ion-item>
-              <button ion-button round outline color="secondary">REQUEST</button>
+              <button ion-button round color="danger" (click)="requestItem('Chicken Sandwich');">REQUEST</button>
               <button ion-button icon-left clear item-end>
                 <ion-icon name="clock"></ion-icon>
                 17:00
@@ -90,7 +90,7 @@
               </ion-item>
             
               <ion-item>
-                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button round color="danger" (click)="requestItem('Cinnamon Buns');">REQUEST</button>
                 <button ion-button icon-left clear item-end>
                   <ion-icon name="clock"></ion-icon>
                 15:00
@@ -118,7 +118,7 @@
               </ion-item>
             
               <ion-item>
-                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button round color="danger" (click)="requestItem('Ketchup');">REQUEST</button>
                 <button ion-button icon-left clear item-end>
                   <ion-icon name="clock"></ion-icon>
                 17:00
@@ -142,7 +142,7 @@
               </ion-item>
             
               <ion-item>
-                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button round color="danger" (click)="requestItem('Caesar Salad');">REQUEST</button>
                 <button ion-button icon-left clear item-end>
                   <ion-icon name="clock"></ion-icon>
                 18:00
@@ -170,7 +170,7 @@
               </ion-item>
             
               <ion-item>
-                <button ion-button round outline color="secondary">REQUEST</button>
+                <button ion-button round color="danger" (click)="requestItem('Spaghetti');">REQUEST</button>
                 <button ion-button icon-left clear item-end>
                   <ion-icon name="clock"></ion-icon>
                 18:00

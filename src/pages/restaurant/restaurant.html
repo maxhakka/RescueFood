@@ -7,12 +7,134 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>restaurant</ion-title>
+    <ion-title>Food Rescue</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-<h2>Restaurant</h2>
+<ion-item-group>
+  <ion-list-header>
+    <h2>{{ title }}</h2>
+    <button ion-button icon-left clear item-end>
+      <ion-icon name="clock"></ion-icon>
+      17:00
+    </button>
+    <p>{{ address }}</p> 
+  </ion-list-header> 
+  <ion-card>      
+    <img src="assets/imgs/wok.jpg">
+    <ion-item>
+      <ion-col>
+        Pad Thai
+      </ion-col>
+        <button ion-button icon-right outline color="secondary"><h2>RECOMMENDED</h2></button>
+      <ion-card-content text-wrap>
+      <p>Pad Thai with shrimp and rice noodles!</p>
+      </ion-card-content>
+      <button ion-button icon-left clear color="grey">
+          <ion-icon name="ribbon"></ion-icon>
+          gluten-free
+      </button>
+      <button ion-button icon-left clear color="grey">
+          <ion-icon name="ice-cream"></ion-icon>
+          lactose-free
+      </button>
+    </ion-item>
+  
+    <ion-item>
+      <button ion-button round color="danger" (click)="buyItem('Pad Thai');">25 SEK</button>
+      <button ion-button icon-left clear item-end>
+        <ion-icon name="basket"></ion-icon>
+        8 left
+      </button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/lax.jpg">
+  
+    <ion-item>
+      <h2>Teriyaki Salmon</h2> 
+      <ion-card-content text-wrap>
+          <p>Teriyaki salmon with pak choi!</p>
+      </ion-card-content>
+      <button ion-button icon-left clear color="grey">
+          <ion-icon name="ribbon"></ion-icon>
+          gluten-free
+      </button>
+      <button ion-button icon-left clear color="grey">
+          <ion-icon name="ice-cream"></ion-icon>
+          lactose-free
+      </button>
+    </ion-item>
+  
+    <ion-item>
+      <button ion-button round color="danger" (click)="buyItem('Teriyaki Salmon');">45 SEK</button>
+      <button ion-button icon-left clear item-end>
+        <ion-icon name="basket"></ion-icon>
+        6 left
+      </button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/sallad.jpg">
+  
+    <ion-item>
+      <h2>Caesar Salad</h2> 
+      <ion-card-content text-wrap>
+          <p>Caesar salad with chicken, parmesan cheese and croutons!</p>
+      </ion-card-content>
+      <button ion-button icon-left clear color="grey">
+          <ion-icon name="ribbon"></ion-icon>
+          gluten-free
+      </button>
+    </ion-item>
+  
+    <ion-item>
+      <button ion-button round color="danger" (click)="buyItem('Caesar Salad');">40 SEK</button>
+      <button ion-button icon-left clear item-end>
+        <ion-icon name="basket"></ion-icon>
+        3 left
+      </button>
+    </ion-item>
+  </ion-card>
+
+    
+    <ion-card>
+      <img src="assets/imgs/tomatsoppa.jpg">
+    
+      <ion-item>
+        <h2>Tomato Soup</h2> 
+        <ion-card-content text-wrap>
+            <p>Home made tomato made from fresh tomatoes</p>
+        </ion-card-content>
+        <button ion-button icon-left clear color="grey">
+            <ion-icon name="leaf"></ion-icon>
+            vegan
+        </button>
+        <button ion-button icon-left clear color="grey">
+            <ion-icon name="ribbon"></ion-icon>
+            gluten-free
+        </button>
+        <button ion-button icon-left clear color="grey">
+            <ion-icon name="ice-cream"></ion-icon>
+            lactose-free
+        </button>
+      </ion-item>
+    
+      <ion-item>
+        <button ion-button round color="danger" (click)="buyItem('Tomato Soup');">15 SEK</button>
+        <button ion-button icon-left clear item-end>
+          <ion-icon name="basket"></ion-icon>
+          15 left
+        </button>
+      </ion-item>
+    
+    </ion-card>
+
+  </ion-item-group>
+
 </ion-content>

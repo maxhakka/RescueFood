@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-about',
@@ -7,8 +8,41 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
 
+  }
+
+  requestItem(food: string){
+    let alert = this.alertCtrl.create({
+      title: 'Confirm Request',
+      message: 'Do you want to request '+food+'?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Confirm',
+          handler: () => {
+            this.confirmAlert(food);
+            console.log('Confirm clicked');
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
+
+  confirmAlert(item: string) {
+    let alert = this.alertCtrl.create({
+      title: 'Request Sent',
+      subTitle: 'Request for '+item+' successfully sent!',
+      buttons: ['Dismiss']
+    });
+    alert.present();
   }
 
 }

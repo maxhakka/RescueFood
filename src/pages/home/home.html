@@ -11,14 +11,14 @@
 
 <ion-content padding>
   <ion-item-group>
-      <ion-card>
+      <!-- <ion-card>
           <img src="assets/imgs/map.png"/>
-        </ion-card>
+        </ion-card> -->
     <ion-list-header>
-      Restaurants
+      <h2>Restaurants</h2>
     </ion-list-header> 
     <ion-item>
-      <button ion-button large clear color="dark" (click)="nextPage();">
+      <button ion-button large clear color="dark" (click)="nextPage({title: 'Restaurang Nymble',address: 'Drg. Kristinas väg 15-19'});">
         <ion-avatar item-start><img src="assets/imgs/nymble.png"></ion-avatar>
         <h2>Nymble</h2>
       </button>
@@ -32,7 +32,7 @@
     </ion-item>
 
     <ion-item>
-      <button ion-button large clear color="dark" (click)="nextPage();">
+      <button ion-button large clear color="dark" (click)="nextPage({title: 'THS Café',address: 'Drg. Kristinas väg 15-19'});">
           <ion-avatar item-start><img src="assets/imgs/ths_cafe.png"></ion-avatar>
           <h2> THS Café</h2>
       </button>
@@ -46,7 +46,7 @@
     </ion-item>
 
     <ion-item>
-        <button ion-button large clear color="dark" (click)="nextPage();">
+        <button ion-button large clear color="dark" (click)="nextPage({title: 'KTH Entré',address: 'Drg. Kristinas väg 4'});">
             <ion-avatar item-start><img src="assets/imgs/KTH_logo.png"></ion-avatar>
             <h2>KTH Entré</h2>
         </button>
@@ -60,7 +60,7 @@
     </ion-item>
 
     <ion-item>
-      <button ion-button large clear color="dark" (click)="nextPage();">
+      <button ion-button large clear color="dark" (click)="nextPage({title: 'Open Café',address: 'Valhallavägen 79'});">
           <ion-avatar item-start><img src="assets/imgs/openlab.png"></ion-avatar>
           <h2> Open Café</h2>
       </button>
