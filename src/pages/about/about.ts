@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { AddPage } from '../add/add';
 
 @Component({
   selector: 'page-about',
@@ -9,7 +10,11 @@ import { AlertController } from 'ionic-angular';
 export class AboutPage {
 
   constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
+  }
 
+  addItem(){
+    console.log('Add a new item');
+    this.navCtrl.push(AddPage);
   }
 
   requestItem(food: string){

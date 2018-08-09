@@ -1,0 +1,61 @@
+<!--
+  Generated template for the AddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Share Food</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="logForm(form)" novalidate>
+    <ion-list-header>
+        <h2>Primary Information</h2>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" required [(ngModel)]="share.title" ngControl="title" name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-textarea [(ngModel)]="share.description" ngControl="description" name="description"></ion-textarea>
+    </ion-item>
+    <br>
+    <ion-list-header>
+        <h2>Allergens</h2>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Vegan</ion-label>
+      <ion-checkbox color="danger" [(ngModel)]="share.vegan" name="vegan"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Vegetarian</ion-label>
+      <ion-checkbox color="secondary" [(ngModel)]="share.vegetarian"  name="vegetarian"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Lactose-free</ion-label>
+      <ion-checkbox [(ngModel)]="share.lactoseFree" name="lactoseFree"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gluten-free</ion-label>
+      <ion-checkbox color="dark" [(ngModel)]="share.glutenFree" name="glutenFree"></ion-checkbox>
+    </ion-item>
+    <br>
+    <ion-list-header>
+        <h2>Available until</h2>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Time</ion-label>
+        <ion-datetime displayFormat="HH:mm" [(ngModel)]="share.time"  name="time"></ion-datetime>
+      </ion-item>
+    <br>
+    <button ion-button block type="submit">Add Item</button>
+  </form>
+    
+</ion-content>
