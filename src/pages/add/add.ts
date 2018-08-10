@@ -32,7 +32,7 @@ export class AddPage {
   logForm(form) {
     let alert = this.alertCtrl.create({
       title: 'Congratulations!',
-      subTitle: 'You shared'+form.value.title+' with other users of the application',
+      subTitle: 'You shared '+form.value.title+' with other users of the application',
       buttons: ['Dismiss']
     });
     alert.present();

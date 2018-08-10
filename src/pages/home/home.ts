@@ -13,7 +13,7 @@ export class HomePage {
   visible4: boolean;
 
   constructor(public navCtrl: NavController) {
-    this.visible = false;
+    this.visible = true;
     this.visible2 = false;
     this.visible3 = false;
     this.visible4 = false;
